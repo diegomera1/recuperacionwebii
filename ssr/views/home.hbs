@@ -1,0 +1,28 @@
+{{> header}}
+
+<h1>Todas las ventas</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Índice</th>
+            <th>Nombre</th>
+            <th>Ciudad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#each ventas}}
+        <tr>
+            <td>{{@key}}</td>
+            <td>{{gasolineraNombre}}</td>
+            <td>{{ciudad}}</td>
+            <td>
+                <a href="/editar/{{_id}}">Editar</a>
+                <a href="/eliminar/{{_id}}">Eliminar</a>
+            </td>
+        </tr>    
+    {{/each}}
+    </tbody>
+</table>   
+
+{{> footer}}

@@ -1,0 +1,27 @@
+{{> header}}
+
+<h2>Formulario para creación de venta</h2>
+<form method="POST">
+    <input type="hidden" name="ventaID" value="{{_id}}"/>
+    <label for="ciudad">Ciudad</label>
+    <input type="text" name="ciudad" value="{{ciudad}}" id="ciudad" required/>
+
+    <label for="gasolineraNombre">Nombre de la gasolinera</label>
+    <input type="text" name="gasolineraNombre" value="{{gasolineraNombre}}" id="gasolineraNombre" required/>
+
+    <label for="ventasGasolinaExtra">Total de ventas en $ para gasolina extra</label>
+    <input type="number" name="ventasGasolinaExtra" value="{{ventasGasolinaExtra}}" id="ventasGasolinaExtra" required/>
+
+    <label for="ventasGasolinaSuper">Total de ventas en $ para gasolina Super</label>
+    <input type="number" name="ventasGasolinaSuper" value="{{ventasGasolinaSuper}}" id="ventasGasolinaSuper" required/>
+
+    <label for="ventasGasolinaDiesel">Total de ventas en $ para gasolina Diesel</label>
+    <input type="number" name="ventasGasolinaDiesel" value="{{ventasGasolinaDiesel}}" id="ventasGasolinaDiesel" required/>
+
+    <label for="ventasGasolinaEcopais">Total de ventas en $ para gasolina Ecopais</label>
+    <input type="number" name="ventasGasolinaEcopais" value="{{ventasGasolinaEcopais}}" id="ventasGasolinaEcopais" required/>
+
+    <input type="submit" value="Actualizar Venta"/>
+</form>
+
+{{> footer}}

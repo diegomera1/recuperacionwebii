@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Aplicación</title>
+    <style>
+        div#root {
+            width: 900px;
+            margin: 50px auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form > * {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div>
+            <h2>Formulario para creación de venta</h2>
+            <form>
+                <label for="ciudad">Ciudad</label>
+                <input type="text" name="ciudad" id="ciudad"/>
+                <label for="gasolineraNombre">Nombre de la gasolinera</label>
+                <input type="text" name="gasolineraNombre" id="gasolineraNombre"/>
+                <label for="ventasGasolinaExtra">Total de ventas en $ para gasolina extra</label>
+                <input type="text" name="ventasGasolinaExtra" id="ventasGasolinaExtra"/>
+                <label for="ventasGasolinaSuper">Total de ventas en $ para gasolina Super</label>
+                <input type="text" name="ventasGasolinaSuper" id="ventasGasolinaSuper"/>
+
+            </form>
+            <hr/>
+            <h2>Formulario de eliminar</h2>
+            <form>
+                <label for="ventaIdDelete">Venta Id</label>
+                <input type="text" name="ventaIdDelete" id="ventaIdDelete"/>
+                <input type="submit" value="Eliminar"/>
+            </form>
+            <hr/>
+        </div>
+        <div>
+            <h2>Todas las ventas</h2>
+            <label for="ciudad">Ciudad</label>
+                <input type="text" name="ciudad" id="ciudad"/>
+                <label for="gasolineraNombre">Nombre de la gasolinera</label>
+                <input type="text" name="gasolineraNombre" id="gasolineraNombre"/>
+                <label for="ventasGasolinaExtra">Total de ventas en $ para gasolina extra</label>
+                <input type="text" name="ventasGasolinaExtra" id="ventasGasolinaExtra"/>
+                <label for="ventasGasolinaSuper">Total de ventas en $ para gasolina Super</label>
+                <input type="text" name="ventasGasolinaSuper" id="ventasGasolinaSuper"/>
+        </div>
+    </div>
+    
+    <script src="/js/index.js"></script>
+</body>
+</html>

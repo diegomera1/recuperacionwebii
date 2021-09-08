@@ -1,0 +1,26 @@
+{{> header}}
+
+<h2>Formulario para creación de venta</h2>
+<form method="POST">
+    <label for="ciudad">Ciudad</label>
+    <input type="text" name="ciudad" id="ciudad" required/>
+
+    <label for="gasolineraNombre">Nombre de la gasolinera</label>
+    <input type="text" name="gasolineraNombre" id="gasolineraNombre" required/>
+
+    <label for="ventasGasolinaExtra">Total de ventas en $ para gasolina extra</label>
+    <input type="number" name="ventasGasolinaExtra" id="ventasGasolinaExtra" required/>
+
+    <label for="ventasGasolinaSuper">Total de ventas en $ para gasolina Super</label>
+    <input type="number" name="ventasGasolinaSuper" id="ventasGasolinaSuper" required/>
+
+    <label for="ventasGasolinaDiesel">Total de ventas en $ para gasolina Diesel</label>
+    <input type="number" name="ventasGasolinaDiesel" id="ventasGasolinaDiesel" required/>
+
+    <label for="ventasGasolinaEcopais">Total de ventas en $ para gasolina Ecopais</label>
+    <input type="number" name="ventasGasolinaEcopais" id="ventasGasolinaEcopais" required/>
+
+    <input type="submit" value="Crear Venta"/>
+</form>
+
+{{> footer}}
